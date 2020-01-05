@@ -24,6 +24,7 @@ function Winning() {
   for (let i = 0; i < numSquares; ++i) {
     squares[i].style.backgroundColor = targetColor;
     squares[i].style.visibility = "visible";
+    h1.classList.remove("rainbow");
     h1.style.backgroundColor = targetColor;
     message.innerHTML = "CORRECT";
   }
@@ -70,7 +71,8 @@ function SetupSquares() {
 }
 
 function SetupUi() {
-  h1.style.backgroundColor = "#ef913f";
+  // h1.style.backgroundColor = "steelbue";
+  h1.classList.add("rainbow");
   message.innerHTML = "";
   colorDisplay.innerHTML = targetColor;
 }
